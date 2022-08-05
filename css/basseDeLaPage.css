@@ -1,0 +1,219 @@
+body{
+    background: black;
+    font-family: "Trebuchet MS";
+}
+.bannerText {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 450px;
+    text-align: center;
+    padding: 30px 0 30px;
+    max-width: 960px;
+    border: 1px solid #fff;
+    background: rgba(206, 206, 206, 0.83);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2000000, endColorstr=#b2000000);
+    zoom:1;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+.container:before{
+    display: table;
+    content: " ";
+}
+.bannerPart {
+    opacity: 0.8;
+    height: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: auto;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 45px;
+}
+.text{
+    margin: 0px;
+}
+#aboutme{
+    background: #a2a49f;
+}
+#diplome{
+    background: #d9dbd6;
+}
+.experience{
+    background: #fefffa;
+}
+.conctater{
+    background: rgba(197,197,197,0.79);
+}
+
+.endWeb{
+background: aquamarine;
+
+}
+
+
+#diploImage{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    height: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+
+    transition: transform .1s;
+
+}
+#diploImage:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+element.style{
+    position: relative;
+    top: 0px;
+}
+.menu {
+    display: flex;
+    padding:0;
+   /* background-color: #ccc;*/
+    justify-content: initial;
+    float: left;
+    position: fixed;
+    top: 35%;
+}
+.menu li {
+    list-style-type: none ;
+}
+.menu a {
+    display:block;
+    min-width: 120px;
+
+    margin: 0.5rem;
+    padding: 0.4rem 0;
+    text-align: center;
+    background-color: #1ABC9C;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    transition: all 1s ;
+}
+.menu a.actif {
+    background-color: #000 ;
+    color: #1ABC9C ;
+    border-color: #1ABC9C ;
+}
+.menu a:hover,
+.menu a:hover.actif{
+    background-color: #ed2794;
+    color: #ffe843;
+    border-color: #ffe843;
+}
+
+/*
+#menu{
+
+    padding-bottom: 10px ;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 900px;
+    text-align: center;
+    background: darkcyan;
+    zoom: 1;
+}
+
+#menu li{
+    float: left;
+
+    text-decoration: none;
+    padding :4px;
+    background-color: darkcyan;
+}
+
+#menu li a {
+
+    display: block ;
+    width: 0;
+    text-decoration:none;
+    padding:5px;
+
+    background:darkcyan ;
+    color:
+            #fff ;
+    font: 1em "Trebuchet MS",Arial,Calibri ;
+    line-height: 1em ;
+
+    text-align: center ;
+}
+#menu li a:hover{
+    color: #ffc700;
+    background: #006868;
+}*/
+.heading{
+    font-family: 'Calibri';
+    font-size: 25px;
+    line-height: 28px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+#textPropo{
+    display: table;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+#image{
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    right: 0;
+    width: 100px;
+
+}
+#canva{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+#text{
+    display: inline-block;
+    background: gray;
+
+}
+
+
+
+.title {
+    font-family: "Calibri";
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    letter-spacing: 1px;
+    line-height:2
+}
+
+h1 {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 120px;
+    margin: 10px 0;
+}
+
