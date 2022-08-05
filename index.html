@@ -24,10 +24,16 @@
 </header>
 <section id ="menuStyle">
     <nav >
-        <?php
-        include 'php/menu.php';
-        menu();
-        ?>
+        <div class="menu" >
+            <ul>
+                <li ><a href="#Accueil">ACCUEIL</a> </li>
+                <li ><a href ="#aboutme">PRÉSENTATION</a></li>
+                <li ><a href ="#diplome">DIPLOMES</a></li>
+                <li ><a href ="#experience">EXPERIENCE</a></li>
+
+                <li ><a href ="#conctater">CONCTAT</a></li>
+            </ul>
+        </div>
     </nav>
 </section>
 
@@ -38,10 +44,24 @@
         <h2>À PROPOS</h2>
         <div id ="canva">
             <div id="textPropo" style="display: inline-block">
-                <?php
-                include 'php/propos.php';
-                propos();
-                ?>
+                <div class="text">
+                    <h3> Luka FAUGIER</h3>
+                    <h4> 21 ans Développeur Junior</h4>
+
+                </div>
+                <p>
+                    Je suis actuellement à la recherche d’un premier emploi ou d’une alternance en développeur d’application,<br> mon programme d’étude étant basé sur le développement d’application.
+                    C’est pourquoi j'ai crée se portFolio<br>qui à pour but de me permettre  d’approfondir mes connaissances théoriques et pratiques.
+                    <br><br>Mon parcours scolaire, ainsi que mes premières expériences dans le monde du travail professionnelles en tant <br> que stagiaire, m'ont pleinement convaincu d'acquérir un savoir et des compétences dans le domaine de <br>système numérique, grâce à l’obtention de mon BTS SNIR qui ma pleinement convainque d’avoir trouver<br> ma vocation pour en faire mon futur métier.<br><br>
+                    Je suis très conscient de mes capacités et aussi de ma passion pour ce secteur qui est l’informatique,<br> et le développement de logiciel.<br>
+
+                </p>
+
+            </div>
+            <div id ="image" style=" display: inline-block;vertical-align: top; ">
+                <img style="width: 200px; height: 200px; border-radius: 20%" src="image/image.png">
+            </div>
+        </div>
             </div>
         </div>
     </div>
@@ -49,25 +69,131 @@
 </section>
 
 <section class="diplome" id="diplome">
-    <?php
-    include "php/diplome.php";
-    diplome();
-    ?>
+    <div class="heading" >
+        <br>
+        <br>
+        <h2> DIPLÔME</h2>
+        <div id="diplomeIT" style="display: inline-block;">
+            <ul>
+                <div >
+                    <div style=" float: left">
+                        <img title="BTS SNIR" id="diploImage" style="width: 200px; height: 150px" alt="img" src="image/LogoBTS%20SNIR.png">
+                    </div>
+                    <div id="text" style="display: inline-block; background: #ebebeb; border-radius: 15%" >
+                        <h3>BTS Système numèrique informatique réseaux</h3>
+                        <p>Lycèe Astier à Aubenas</p>
+                    </div>
+                </div>
+                <br>
+                <div class="diplomeImage">
+                    <div style="float: left">
+                        <img title="BAC PRO SNIR"  id="diploImage" style="width: 200px; height: 150px" src="image/LogoBacPro.png" >
+                    </div>
+                    <div id="text" style="display: inline-block; background: #ebebeb; border-radius: 15% " >
+                        <h3>Baccalauréat Profésionnelle </h3><h3>Système numèrique informatique réseaux</h3>
+                        <p>Lycèe Lasalle à Alès</p>
+                    </div>
+                </div>
+                <br>
+
+            </ul>
+        </div>
+    </div>
 
 </section>
 
 <section class="experience" id ="experience">
-    <?php
-    include "php/experience.php";
-    experience();
-    ?>
+    <div class="heading" >
+        <br>
+        <h2> EXPÉRIENCE PROFESSIONNELLE</h2>
+        <div id="diplomeIT" style="display: inline-block;">
+            <ul>
+                <div class="diplomeImage">
+                    <div style="float: left">
+                        <img title="Stage de BAC Pro SNIR"  id="diploImage" style="width: 200px; height: 150px" src="image/StageLemiaBTSImage1.png" >
+                    </div>
+                    <div id="text" style="display: inline-block; background: #bbbbbb ; border-radius: 15%" >
+                        <h3>Stage à Lémia </h3><h5>Programmeur</h5>
+                        <p>Développement d'application en  langage C sur
+                            <br>microcontrôleur LPC</p>
+                    </div>
+                </div>
+                <br>
+                <div >
+                    <div style=" float: left">
+                        <img title="Stage de BAC PRO" id="diploImage" style="width: 200px; height: 150px" alt="img" src="image/StageRSINFOBACPROImage2.png">
+                    </div>
+                    <div id="text" style="display: inline-block; background:  #bbbbbb; border-radius: 15%" >
+                        <h3>Stage à RS info</h3> <h5>Réparateur</h5>
+                        <p>J’ai effectué 12 semaines de stage, j’ai réparer différent <br>
+                            ordinateur sur tous type de model et de marque.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div >
+                    <div style=" float: left">
+                        <img title="Stage de BAC PRO" id="diploImage" style="width: 200px; height: 150px" alt="img" src="image/StageBsmodileBACPROImage3.png">
+                    </div>
+                    <div id="text" style="display: inline-block; background:  #bbbbbb; border-radius: 15%" >
+                        <h3>Stage à BS modile</h3> <h5>Réparateur</h5>
+                        <p>J’ai effectué 8 semaines de stage,  j’ai réparer différent <br>
+                            télphone  sur tous type de model et de marque.
+                        </p>
+                    </div>
+                    <br>
+                    <br>
+                    <div >
+                        <div style=" float: left">
+                            <img title="Stage de 3ème" id="diploImage" style="width: 200px; height: 150px" alt="img" src="image/StageCGED3emeImage4.png">
+                        </div>
+                        <div id="text" style="display: inline-block; background:  #bbbbbb; border-radius: 15%" >
+                            <h3>Stage à CGED</h3> <h5></h5>
+                            <p>J’ai effectué 2 semaines de stage, j’ai vendu tous types<br>
+                                de produit  électronique ainsi que leur étiquetage.
+                            </p>
+                        </div>
+                    </div>
+
+                    <br>
+                </div>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <section class="conctater" id="conctater">
-    <?php
-    include "php/conctater.php";
-    conctater();
-    ?>
+    <div class="heading" >
+        <br>
+        <br>
+        <h2> CONCTATER</h2>
+        <div id="conctaterI" style="display: inline-block;">
+            <ul>
+                <div class="diplomeImage">
+                    <div style="float: left">
+                        <img title="MAIL"  id="diploImage" style="width: 150px; height: 150px" src="image/LogoMail.png" >
+                    </div>
+                    <div id="text" style="display: inline-block; background: #bbbbbb ; border-radius: 15%" >
+                        <h3>Mail</h3>
+                        <p>faugierluka2000@gmail.com</p>
+                    </div>
+                </div>
+                <br>
+                <div >
+                    <div style=" float: left">
+                        <img title="Téléphone" id="diploImage" style="width: 150px; height: 150px" alt="img" src="image/Logotele.png">
+                    </div>
+                    <div id="text" style="display: inline-block; background:  #bbbbbb; border-radius: 15%" >
+                        <h3>Téléphone Portable</h3>
+                        <p>07-60-66-45-54
+                        </p>
+                    </div>
+                </div>
+                <br>
+
+            </ul>
+        </div>
+    </div>
 </section>
 
 <section class="endWeb" id ="endWeb">
