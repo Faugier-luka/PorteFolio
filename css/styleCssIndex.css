@@ -185,12 +185,15 @@ body{
 }
 #diplome{
     background: #d9dbd6;
+    color:cornflowerblue;
 }
 .experience{
     background: #fefffa;
+    color: gray;
 }
 .conctater{
     background: rgba(197,197,197,0.79);
+
 }
 
 .endWeb{
