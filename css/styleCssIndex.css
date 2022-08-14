@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+
+body {
+
+    min-height: 100vh;
+
+}
+
+.fullPageMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+}
+
+.fullPageMenu.active {
+    top: -100%;
+}
+
+.fullPageMenu .banner {
+    position: relative;
+    width: 600px;
+    height: 50%;
+    left:10%;
+
+}
+
+.fullPageMenu .banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:10% ;
+    border:#005bff;
+}
+
+.fullPageMenu .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.fullPageMenu .nav ul {
+    position: relative;
+}
+
+.fullPageMenu .nav ul li {
+    position: relative;
+    list-style: none;
+    padding: 0 20px;
+    margin: 5px 0;
+    overflow: hidden;
+    display: table;
+}
+
+.fullPageMenu .nav ul li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #005bff;
+    transition: transform 0.5s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+.fullPageMenu .nav ul li:hover:before {
+    transition: transform 0.5s ease-in-out;
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+.fullPageMenu .nav ul li a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.fullPageMenu .nav ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    color: #fff;
+}
+
+.fullPageMenu .nav ul li:hover a {
+    transform: translateY(-100%);
+    color: fff;
+}
+
+.menuicon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #fff url(https://i.postimg.cc/k4rb3zpp/pngwave.png);
+    background-size: 40px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+.menuicon.active {
+    background: #fff url(https://i.postimg.cc/25t1dMY5/pngegg-1.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+@media(max-width:991px) {
+    .banner {
+        display: none;
+    }
+}
+
+body{
+    background: black;
+    font-family: "Trebuchet MS";
+}
+.bannerText {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 450px;
+    text-align: center;
+    padding: 30px 0 30px;
+    max-width: 960px;
+    border: 1px solid #fff;
+    background: rgba(206, 206, 206, 0.83);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2000000, endColorstr=#b2000000);
+    zoom:1;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+}
+.container:before{
+    display: table;
+    content: " ";
+}
+.bannerPart {
+    opacity: 0.8;
+    height: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    margin: auto;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 45px;
+}
+.text{
+    margin: 0px;
+}
+#aboutme{
+    background: #a2a49f;
+}
+#diplome{
+    background: #d9dbd6;
+}
+.experience{
+    background: #fefffa;
+}
+.conctater{
+    background: rgba(197,197,197,0.79);
+}
+
+.endWeb{
+    background: aquamarine;
+
+}
+
+
+#diploImage{
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    height: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+
+    transition: transform .1s;
+
+}
+#diploImage:hover{
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+element.style{
+    position: relative;
+    top: 0px;
+}
+
+.heading{
+    font-family: 'Calibri';
+    font-size: 25px;
+    line-height: 28px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+#textPropo{
+    display: table;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+#image{
+    vertical-align: middle;
+    display: table-cell;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    right: 0;
+    width: 100px;
+
+}
+#canva{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+#text{
+    display: inline-block;
+    background: gray;
+
+}
+
+
+
+.title {
+    font-family: "Calibri";
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    letter-spacing: 1px;
+    line-height:2
+}
+
+h1 {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 120px;
+    margin: 10px 0;
+}
+h1:hover {
+    margin-right: 5px;
+    content: "'";
+    margin-left: 30px;
+
+    color: rgba(255, 255, 255, 0.45);
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #fff;
+}
+.cursor {
+    position: fixed;
+    border-radius: 50%;
+    transform: translateX(-20%) translateY(-20%);
+    pointer-events: none;
+    left: -10px;
+    top: 50%;
+    /*mix-blend-mode: difference;*/
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 10000;
+    border: 3px solid #000000;
+
+    height: 40px;
+    width: 40px;
+    transition: all 10ms ease-out;
+}
+
+@media screen and (max-width: 1024px){
+
+    .banner{
+        display:block;
+    }
+
+    #image{
+        vertical-align: middle;
+        display: contents;
+        position: relative;
+        top: 10px;
+        left: 50px;
+        right: 0;
+        width: 100px;
+    }
+    *{
+        padding:7px;
+        margin: auto;
+    }
+}

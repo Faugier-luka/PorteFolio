@@ -1,58 +1,74 @@
-<?php
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portefolio</title>
-    <link rel="stylesheet" href="css/basseDeLaPage.css">
-    <link rel="icon" href="image/LogoPortFolio.png" style="width: 10px; height: 10px;">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styleCssIndex.css">
+    <link rel="stylesheet" href="css/styleAcceuil.css">
+    <link rel="stylesheet" href="css/stylePresentation.css">
 </head>
 <body>
-<header id="Accueil">
-    <div class="banner front" id="banner">
-        <div class="bannerPart" style=" width: 2000px; height: 900px;">
-            <img src="image/Wallpaper%20Esthétique.jpg" >
-        </div>
 
-        <div class="bannerText container">
-            <h1>Luka FAUGIER</h1>
-            <h2>Développeur Junior</h2>
+<header id="Accueil">
+    <div class="" id="banner">
+        <div class="bannerPart" style=" width: 2000px; height: 900px;"></div>
+
+        <div class="banner front">
+            <a>
+                <h1 id="h1l" >
+                    <span>L</span>
+                    <span>U</span>
+                    <span>K</span>
+                    <span>A</span>
+                    <span> </span>
+                    <span>F</span>
+                    <span>A</span>
+                    <span>U</span>
+                    <span>G</span>
+                    <span>I</span>
+                    <span>E</span>
+                    <span>R</span>
+                    </br>
+                    <span>D</span>
+                    <span>é</span>
+                    <span>v</span>
+                    <span>e</span>
+                    <span>l</span>
+                    <span>o</span>
+                    <span>p</span>
+                    <span>p</span>
+                    <span>e</span>
+                    <span>u</span>
+                    <span>r</span>
+                    <span> </span>
+                    <span>J</span>
+                    <span>u</span>
+                    <span>n</span>
+                    <span>i</span>
+                    <span>o</span>
+                    <span>r</span>
+                </h1>
+            </a>
 
         </div>
     </div>
 </header>
-<section id ="menuStyle">
-    <nav >
-        <div class="menu" >
-            <ul>
-                <li ><a href="#Accueil">ACCUEIL</a> </li>
-                <li ><a href ="#aboutme">PRÉSENTATION</a></li>
-                <li ><a href ="#diplome">DIPLOMES</a></li>
-                <li ><a href ="#experience">EXPERIENCE</a></li>
 
-                <li ><a href ="#conctater">CONCTAT</a></li>
-            </ul>
-        </div>
-    </nav>
-</section>
 
-<section class="aboutme" id="aboutme">
-    <div class="heading" >
+<section class="aboutme" id="aboutme" >
+    <div class="heading">
         <br>
         <br>
-        <h2>À PROPOS</h2>
+
+        <h2  class="line-1 anim-typewriter">À PROPOS</h2>
         <h3> Luka FAUGIER</h3>
         <h4> 21 ans</h4>
         <h4> Développeur Junior</h4>
         <div id ="canva">
             <div id="textPropo" style="display: inline-block">
                 <div class="text">
-
-
                 </div>
-                <p>
+                <p >
                     Je suis actuellement à la recherche d’un premier emploi ou d’une alternance en développeur d’application,<br> mon programme d’étude étant basé sur le développement d’application.
                     C’est pourquoi j'ai créé ce portfolio<br>qui a pour but de me permettre  d’approfondir mes connaissances théoriques et pratiques.
                     <br><br>Mon parcours scolaire, ainsi que mes premières expériences dans le monde professionnel en tant <br> que stagiaire, m'ont pleinement convaincu d'acquérir un savoir et des compétences dans le domaine des <br>systèmes numériques, grâce à l’obtention de mon BTS SNIR qui m'a pleinement convaincu d’avoir trouvé<br> ma vocation pour en faire mon futur métier.<br><br>
@@ -65,11 +81,13 @@
                 <img style="width: 200px; height: 200px; border-radius: 20%" src="image/image.png">
             </div>
         </div>
-            </div>
-        </div>
+    </div>
+    </div>
     </div>
 
 </section>
+
+
 
 <section class="diplome" id="diplome">
     <div class="heading" >
@@ -213,6 +231,39 @@
         </ul>
     </div>
 </section>
+
+
+<div class="fullPageMenu" id="nav">
+    <div class="banner">
+        <img src="image/image.png" alt="image">
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a href="#Accueil" onclick="menuToggle()" data-text="Accueil">Accueil</a></li>
+            <li><a href="#aboutme" onclick="menuToggle()" data-text="Présentation">Présentation</a></li>
+            <li><a href="#" onclick="menuToggle()" data-text="Diplômes">Diplômes</a></li>
+            <li><a href="#" onclick="menuToggle()" data-text="Experience">Experience</a></li>
+            <li><a href="#" onclick="menuToggle()" data-text="Contact">Contact</a></li>
+        </ul>
+    </div>
+</div>
+<span class="menuicon" id="toggle" onclick="menuToggle()"></span>
+
+
+<script>
+
+    function menuToggle() {
+        var nav = document.getElementById("nav")
+        var toggle = document.getElementById("toggle")
+        nav.classList.toggle("active")
+        toggle.classList.toggle("active")
+    }
+
+    $('[data-text]').on('keyup', function(){
+        $(this).attr('data-text', $(this).text());
+    });
+</script>
+
+<script src="JavaScript/jsAnimation.js"/>
 </body>
 </html>
-
